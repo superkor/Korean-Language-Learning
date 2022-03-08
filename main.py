@@ -1,29 +1,39 @@
-import tkinter as tk
+from appJar import gui
 
-class App(tk.Frame):
-    def __init__(self, master):
-        super().__init__(master)
-        self.pack()
+ # create the GUI & set a title
+#app = gui("Korean Language Program")
 
-        self.entrythingy = tk.Entry()
-        self.entrythingy.pack()
+def start():
+    pass
 
-        # Create the application variable.
-        self.contents = tk.StringVar()
-        # Set it to some value.
-        self.contents.set("this is a variable")
-        # Tell the entry widget to watch this variable.
-        self.entrythingy["textvariable"] = self.contents
+def stop():
+    app.stop()
 
-        # Define a callback for when the user hits return.
-        # It prints the current value of the variable.
-        self.entrythingy.bind('<Key-Return>',
-                             self.print_contents)
+""" # add labels & entries
+app.addLabel("Program")
+app.addLabel("Some text here describing the program")
+app.addButtons(["Start", "Quit"], [start, stop])
+ """
+def press(btn):
+    if btn == "FIRST": app.firstFrame("Pages")
+    elif btn == "NEXT": app.nextFrame("Pages")
+    elif btn == "PREV": app.prevFrame("Pages")
+    elif btn == "LAST": app.lastFrame("Pages")
 
-    def print_contents(self, event):
-        print("Hi. The current entry content is:",
-              self.contents.get())
+with gui("FRAME STACK") as app:
+    with app.frameStack("Pages", start=0):
+        with app.frame():
+            for i in range(5):
+                app.label("Text: " + str(i))
+        with app.frame():
+            for i in range(5):
+                app.entry("e" + str(i))
+        with app.frame():
+            for i in range(5):
+                app.button(str(i), None)
 
-root = tk.Tk()
-myapp = App(root)
-myapp.mainloop()
+    app.buttons(["FIRST", "PREV", "NEXT", "LAST"], press)
+
+
+# start the GUI
+app.go()
