@@ -1,10 +1,39 @@
+<!-- TODO
+* Add chapter selections
+* Add chapter lessons (potentially adding audio)
+* set up database?
+* Add nav bar between the lessons
+* Add titleBar to jump to specific lessons
+-->
+
 <!DOCTYPE html>
 <head>
-    Test
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Lato font family -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
 </head>
 <title>
     Learn Korean
 </title>
 <body>
-    
+    <div id="titleWrapper">
+        <button type="button" class="button" alt="Justin Chow" style="color:white; font-weight: bold;">Justin Chow</button>
+    </div>
+    <div id="title">
+        <div style="font-size: 100px;">
+            Learn Korean
+        </div>
+        <div style="font-size: 30px;">
+            Created by Justin Chow
+        </div>
+        <div style="margin-top: 25px;">
+            <button type="button" class = "button" onclick="jump()">Test</button>
+        </div>
+    </div>
+
+    <div id="chapters" style="margin-top: 700px;">
+        test
+    </div>
 </body>
+
+<script src="index.js"></script>
