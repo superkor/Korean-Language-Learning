@@ -55,3 +55,25 @@ body{
     opacity: 1;
 }
 }
+
+.column{
+    float: left;
+    position: relative;
+    width: 25%;
+}
+
+.column l{
+    left: 0%;
+}
+
+.column c{
+    left: 25%;
+}
+
+.column c2{
+    left: 50%
+}
+
+.column r{
+    left: 75%;
+}
