@@ -1,0 +1,27 @@
+{
+    "book_one": {
+        "chapter_one":
+            {
+                "lesson_one":
+                    {
+                        "title": "Hangul-1",
+                        "desc": "test",
+                        "link": "book-one/chapter-one/1.html"
+                    },
+                "lesson_two":
+                    {
+                        "title": "Hangul-2",
+                        "desc": "test",
+                        "link": "book-one/chapter-one/2.html"
+                    }
+            },
+        "chapter_two":
+            {
+                
+            }
+        
+    },
+    "book_two":{
+
+    }
+}
