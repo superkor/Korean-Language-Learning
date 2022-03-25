@@ -1,27 +1,59 @@
 {
-    "book_one": {
-        "chapter_one":
-            {
-                "lesson_one":
-                    {
-                        "title": "Hangul-1",
-                        "desc": "test",
-                        "link": "book-one/chapter-one/1.html"
+    "book_one":
+        {
+            "chapter_one":
+                {
+                "title": "Chapter 1",
+                "lessons": [{
+                    "lesson_one":
+                        {
+                            "title": "test-1",
+                            "desc": "test"
+                        }
                     },
-                "lesson_two":
                     {
-                        "title": "Hangul-2",
-                        "desc": "test",
-                        "link": "book-one/chapter-one/2.html"
+                    "lesson_two":
+                        {
+                            "title": "test-2",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_three":
+                        {
+                            "title": "test-3",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_four":
+                        {
+                            "title": "test-4",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_five":
+                        {
+                            "title": "test-5",
+                            "desc": "test"
+                        }
+                    },{
+                    "lesson_six":
+                        {
+                            "title": "test-6",
+                            "desc": "test"
+                        }   
                     }
-            },
-        "chapter_two":
-            {
-                
-            }
-        
-    },
-    "book_two":{
+                ]},
+            "chapter_two":
+                {
+                    
+                }
+            
+        },
+    "book_two":
+        {
 
-    }
+        }
 }
