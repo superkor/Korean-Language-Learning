@@ -48,12 +48,123 @@
                 ]},
             "chapter_two":
                 {
-                    
-                }
+                "title": "Chapter 2",
+                "lessons": [{
+                    "lesson_one":
+                        {
+                            "title": "test-1",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_two":
+                        {
+                            "title": "test-2",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_three":
+                        {
+                            "title": "test-3",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_four":
+                        {
+                            "title": "test-4",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_five":
+                        {
+                            "title": "test-5",
+                            "desc": "test"
+                        }
+                    }
+                ]},
+                "chapter_three":
+                {
+                "title": "Chapter 3",
+                "lessons": [{
+                    "lesson_one":
+                        {
+                            "title": "test-1",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_two":
+                        {
+                            "title": "test-2",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_three":
+                        {
+                            "title": "test-3",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_four":
+                        {
+                            "title": "test-4",
+                            "desc": "test"
+                        }
+                    }
+                ]}
             
         },
     "book_two":
         {
-
+            "chapter_one":
+                {
+                "title": "Chapter 1",
+                "lessons": [{
+                    "lesson_one":
+                        {
+                            "title": "test-1",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_two":
+                        {
+                            "title": "test-2",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_three":
+                        {
+                            "title": "test-3",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_four":
+                        {
+                            "title": "test-4",
+                            "desc": "test"
+                        }
+                    },
+                    {
+                    "lesson_five":
+                        {
+                            "title": "test-5",
+                            "desc": "test"
+                        }
+                    },{
+                    "lesson_six":
+                        {
+                            "title": "test-6",
+                            "desc": "test"
+                        }   
+                    }
+                ]}
         }
 }

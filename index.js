@@ -33,7 +33,11 @@ function createGrid(){
         const appendChapter = document.getElementById("books");
         pos = 0;
         for (let w = 0; w < bookAmt; w++){
-            chapterAmt = Object.keys(data.book_one).length;
+            if (w == 0){
+                chapterAmt = Object.keys(data.book_one).length;
+            } else {
+                chapterAmt = Object.keys(data.book_two).length;
+            }
             //create arrow up
             buttonLink = document.createElement("button");
             buttonLink.setAttribute("id", "titleBook"+(w+1));
@@ -107,7 +111,6 @@ function dropDown(element){
     //get parent element from button
     let parent = document.getElementById(element).parentElement;
     //check if the list is hidden; if it isn't, hide it, otherwise show it (duh)
-    console.log(parent.childNodes[1]);
     if (parent.childNodes[1].style.display == "block"){
         //go through all the rows and hide them
         for (let x = 1; x < parent.childNodes.length; x++){
