@@ -8,13 +8,14 @@ function enableScroll(){
     document.body.style.overflowY = "scroll";
     //scroll to chapters div
     document.getElementById("books").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("toChapters").setAttribute("disabled","");
     createGrid();
 }
 
 function createGrid(){
-    var colName, rowName, newRow, newCol, newChapter, chapterName, bookName, newBook;
-    var pos, styleAttr, arrow, buttonLink;
-    var bookAmt, chapterAmt, lessonAmt;
+    var colName, rowName, newRow, newCol, chapterLink, bookName, newBook;
+    var arrow, buttonLink;
+    var bookAmt, chapterAmt;
 
     const chapterData = new XMLHttpRequest();
     chapterData.overrideMimeType("application/json");
@@ -29,7 +30,6 @@ function createGrid(){
         console.log(lessonAmt); */
 
         const appendChapter = document.getElementById("books");
-        pos = 0;
         for (let w = 0; w < bookAmt; w++){
             if (w == 0){
                 chapterAmt = Object.keys(data.book_one.chapters).length;
@@ -63,53 +63,52 @@ function createGrid(){
                 newRow.setAttribute('class', "row");
                 document.getElementById(bookName).appendChild(newRow);
                 //creating cols in the created row
-                for (let x = 0; x < 4; x++){
+                for (let x = 0; x < 3; x++){
                     //set newCol name
                     colName = "col"+x;
                     newCol = document.createElement("div")
                     newCol.setAttribute("id", colName);
-                    //Determine position of cols (either left (l), centre-left (c), centre-right (c2), right (r))
-                    switch(pos){
-                        case 0:
-                            styleAttr = "l";
-                            break;
-                        case 1:
-                            styleAttr = "c";
-                            break;
-                        case 2:
-                            styleAttr= "c2";
-                            break;
-                        case 3:
-                            styleAttr = "r";
-                            break;
-                    }
                     //set class attribute to new col with the pos
-                    newCol.setAttribute("class", "column "+styleAttr);
-                    if (x == 0){
-                        newCol.appendChild(document.createTextNode(y));
-                    } else{
-                        if (w == 0){
-                            if (x == 1)
-                                newCol.appendChild(document.createTextNode(data.book_one.chapters[y].title));
-                            else{
-                                newCol.appendChild(document.createTextNode(data.book_one.chapters[y].desc));
-                            }
+                    newCol.setAttribute("class", "column");
+                    if (w == 0){
+                        if (x == 0)
+                            newCol.appendChild(document.createTextNode(data.book_one.chapters[y].title));
+                        else if (x==1){
+                            newCol.appendChild(document.createTextNode(data.book_one.chapters[y].desc));
+                        } else{
+                            chapterLink = document.createElement("a");
+                            chapterLink.setAttribute("href", "chapters/chapters.html");
+                            newChapter = document.createElement("button");
+                            newChapter.appendChild(document.createTextNode("Click here to access the chapter"));
+                            newChapter.setAttribute("class", "button");
+                            chapterLink.appendChild(newChapter);
+                            //localStorage to get user selected chapter on chapters.html
+                            localStorage.setItem(bookName+data.book_one.chapters[y].title, "book one "+y);
+                            console.log(localStorage.getItem(bookName+data.book_one.chapters[y].title));
+                            newCol.appendChild(chapterLink);
                         }
-                        else {
-                            if (x == 1)
-                                newCol.appendChild(document.createTextNode(data.book_two.chapters[y].title));
-                            else{
-                                newCol.appendChild(document.createTextNode(data.book_two.chapters[y].desc));
-                            }
+                    }
+                    else {
+                        if (x == 0)
+                            newCol.appendChild(document.createTextNode(data.book_two.chapters[y].title));
+                        else if(x==1){
+                            newCol.appendChild(document.createTextNode(data.book_two.chapters[y].desc));
+                        }
+                        else{
+                            chapterLink = document.createElement("a");
+                            chapterLink.setAttribute("href", "chapters/chapters.html");
+                            newChapter = document.createElement("button");
+                            newChapter.appendChild(document.createTextNode("Click here to access the chapter"));
+                            newChapter.setAttribute("class", "button");
+                            chapterLink.appendChild(newChapter);
+                            //localStorage to get user selected chapter on chapters.html
+                            localStorage.setItem(bookName+data.book_one.chapters[y].title, "book two "+y);
+                            console.log(localStorage.getItem(bookName+data.book_two.chapters[y].title));
+                            newCol.appendChild(chapterLink);
                         }
                     }
                     //append the new col to the new row
                     document.getElementById(rowName).appendChild(newCol);
-                }
-                pos++;
-                //reset orientation back to left if the last column has been appended to the row
-                if (pos == 4){
-                    pos = 0;
                 }
             }
         }
@@ -144,4 +143,13 @@ function dropDown(element){
 
 function transistion(){
     ;//will add some fade animation for dropdown lists
+}
+
+window.onload = function(){
+    var load = performance.getEntriesByType("navigation")[0].type;
+    if (load == "reload"){
+        scrollToTop();
+    } else if (load == "back_forward"){
+        scrollToTop();
+    }
 }
