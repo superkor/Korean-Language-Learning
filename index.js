@@ -90,7 +90,12 @@ function createGrid(){
                     if (x == 0){
                         newCol.appendChild(document.createTextNode(y));
                     } else{
-                        newCol.appendChild(document.createTextNode("test"));
+                        if (w == 0){
+                            console.log(data);
+                            console.log(data.book_one.chapters[0].title);
+                            newCol.appendChild(document.createTextNode(data.book_one.chapters[0].title));
+                        }
+                        
                     }
                     //append the new col to the new row
                     document.getElementById(rowName).appendChild(newCol);
