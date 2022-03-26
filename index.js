@@ -24,8 +24,6 @@ function createGrid(){
         var data = JSON.parse(this.response);
 
         bookAmt = Object.keys(data).length;
-        console.log(data);
-        console.log(bookAmt);
 
         /* lessonAmt = Object.keys(data.book_one.chapter_one.lessons).length;
         console.log(lessonAmt); */
@@ -34,9 +32,9 @@ function createGrid(){
         pos = 0;
         for (let w = 0; w < bookAmt; w++){
             if (w == 0){
-                chapterAmt = Object.keys(data.book_one).length;
+                chapterAmt = Object.keys(data.book_one.chapters).length;
             } else {
-                chapterAmt = Object.keys(data.book_two).length;
+                chapterAmt = Object.keys(data.book_two.chapters).length;
             }
             //create arrow up
             buttonLink = document.createElement("button");
@@ -91,11 +89,19 @@ function createGrid(){
                         newCol.appendChild(document.createTextNode(y));
                     } else{
                         if (w == 0){
-                            console.log(data);
-                            console.log(data.book_one.chapters[0].title);
-                            newCol.appendChild(document.createTextNode(data.book_one.chapters[0].title));
+                            if (x == 1)
+                                newCol.appendChild(document.createTextNode(data.book_one.chapters[y].title));
+                            else{
+                                newCol.appendChild(document.createTextNode(data.book_one.chapters[y].desc));
+                            }
                         }
-                        
+                        else {
+                            if (x == 1)
+                                newCol.appendChild(document.createTextNode(data.book_two.chapters[y].title));
+                            else{
+                                newCol.appendChild(document.createTextNode(data.book_two.chapters[y].desc));
+                            }
+                        }
                     }
                     //append the new col to the new row
                     document.getElementById(rowName).appendChild(newCol);

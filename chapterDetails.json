@@ -3,9 +3,8 @@
         {
             "chapters": [
                 {
-                "chapter_one":
-                    {
                     "title": "Chapter 1",
+                    "desc": "Chapter 1 Desc",
                     "lessons": [{
                         "lesson_one":
                             {
@@ -47,12 +46,11 @@
                                 "desc": "test"
                             }   
                         }
-                    ]}
+                    ]
                 },
-                {
-                "chapter_two":
                     {
                     "title": "Chapter 2",
+                    "desc": "Chapter 2 Desc",
                     "lessons": [
                         {
                         "lesson_one":
@@ -89,12 +87,11 @@
                                 "desc": "test"
                             }
                         }
-                    ]}
+                    ]
                 },
-                {
-                    "chapter_three":
                     {
                     "title": "Chapter 3",
+                    "desc": "Chapter 3 Desc",
                     "lessons": [
                         {
                         "lesson_one":
@@ -125,16 +122,14 @@
                             }
                         }
                     ]}
-                }
             ]
         },
     "book_two":
         {
             "chapters": [
                 {
-                "chapter_one":
-                    { 
                     "title": "Chapter 1",
+                    "desc": "Chapter 1 Desc",
                     "lessons": [
                         {
                         "lesson_one":
@@ -177,13 +172,11 @@
                                 "desc": "test"
                             }   
                         }
-                        ]
-                    }
+                    ]
                 },
                 {
-                    "chapter_two":
-                    { 
                     "title": "Chapter 2",
+                    "desc": "Chapter 2 Desc",
                     "lessons": [{
                         "lesson_one":
                             {
@@ -225,8 +218,7 @@
                                 "desc": "test"
                             }   
                         }
-                    ]}
-                    
+                    ]
             }]
         }
 }
