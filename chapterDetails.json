@@ -6,121 +6,77 @@
                     "title": "Chapter 1",
                     "desc": "Chapter 1 Desc",
                     "lessons": [{
-                        "lesson_one":
-                            {
-                                "title": "test-1",
+                                "title": "Lesson 1",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_two":
+                            },
                             {
-                                "title": "test-2",
+                                "title": "Lesson 2",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_three":
+                            },
                             {
-                                "title": "test-3",
+                                "title": "Lesson 3",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_four":
+                            },
                             {
-                                "title": "test-4",
+                                "title": "Lesson 4",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_five":
+                            },
                             {
-                                "title": "test-5",
+                                "title": "Lesson 5",
                                 "desc": "test"
-                            }
-                        },{
-                        "lesson_six":
+                            },
                             {
-                                "title": "test-6",
+                                "title": "Lesson 6",
                                 "desc": "test"
                             }   
-                        }
                     ]
                 },
                     {
                     "title": "Chapter 2",
                     "desc": "Chapter 2 Desc",
                     "lessons": [
-                        {
-                        "lesson_one":
                             {
-                                "title": "test-1",
+                                "title": "Lesson 1",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 2",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 3",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 4",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 5",
                                 "desc": "test"
                             }
-                        },
-                        {
-                        "lesson_two":
-                            {
-                                "title": "test-2",
-                                "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_three":
-                            {
-                                "title": "test-3",
-                                "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_four":
-                            {
-                                "title": "test-4",
-                                "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_five":
-                            {
-                                "title": "test-5",
-                                "desc": "test"
-                            }
-                        }
                     ]
                 },
                     {
                     "title": "Chapter 3",
                     "desc": "Chapter 3 Desc",
                     "lessons": [
-                        {
-                        "lesson_one":
                             {
-                                "title": "test-1",
+                                "title": "Lesson 1",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 2",
+                                "desc": "test"
+                            },
+                        {
+                                "title": "Lesson 3",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 4",
                                 "desc": "test"
                             }
-                        },
-                        {
-                        "lesson_two":
-                            {
-                                "title": "test-2",
-                                "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_three":
-                            {
-                                "title": "test-3",
-                                "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_four":
-                            {
-                                "title": "test-4",
-                                "desc": "test"
-                            }
-                        }
                     ]}
             ]
         },
@@ -131,94 +87,93 @@
                     "title": "Chapter 1",
                     "desc": "Chapter 1 Desc",
                     "lessons": [
-                        {
-                        "lesson_one":
                             {
-                                "title": "test-1",
+                                "title": "Lesson 1",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_two":
+                            },
                             {
-                                "title": "test-2",
+                                "title": "Lesson 2",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_three":
+                            },
                             {
-                                "title": "test-3",
+                                "title": "Lesson 3",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_four":
+                            },
                             {
-                                "title": "test-4",
+                                "title": "Lesson 4",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_five":
+                            },
                             {
-                                "title": "test-5",
+                                "title": "Lesson 5",
                                 "desc": "test"
-                            }
-                        },{
-                        "lesson_six":
+                            },
                             {
-                                "title": "test-6",
+                                "title": "Lesson 6",
                                 "desc": "test"
                             }   
-                        }
                     ]
                 },
                 {
                     "title": "Chapter 2",
                     "desc": "Chapter 2 Desc",
                     "lessons": [{
-                        "lesson_one":
-                            {
-                                "title": "test-1",
+                                "title": "Lesson 1",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_two":
+                            },
                             {
-                                "title": "test-2",
+                                "title": "Lesson 2",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_three":
+                            },
                             {
-                                "title": "test-3",
+                                "title": "Lesson 3",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_four":
+                            },
                             {
-                                "title": "test-4",
+                                "title": "Lesson 4",
                                 "desc": "test"
-                            }
-                        },
-                        {
-                        "lesson_five":
+                            },
                             {
-                                "title": "test-5",
+                                "title": "Lesson 5",
                                 "desc": "test"
-                            }
-                        },{
-                        "lesson_six":
+                            },
                             {
-                                "title": "test-6",
+                                "title": "Lesson 6",
                                 "desc": "test"
                             }   
-                        }
                     ]
-            }]
+            },{
+                "title": "Chapter 3",
+                    "desc": "Chapter 3 Desc",
+                    "lessons": [{
+                                "title": "Lesson 1",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 2",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 3",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 4",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 5",
+                                "desc": "test"
+                            },
+                            {
+                                "title": "Lesson 6",
+                                "desc": "test"
+                            }   
+                    ]
+
+
+            }
+        
+        
+        ]
         }
 }
