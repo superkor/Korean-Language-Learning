@@ -1,7 +1,7 @@
 window.onload = function(){
     const chapterData = new XMLHttpRequest();
     chapterData.overrideMimeType("application/json");
-    chapterData.open("GET", "/chapterDetails.json", true);
+    chapterData.open("GET", "/Korean-Language-Learning/chapterDetails.json", true);
 
     chapterData.onload = function(){
         var divParent, chapterLinks;
