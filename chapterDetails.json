@@ -77,7 +77,32 @@
                                 "title": "Lesson 4",
                                 "desc": "test"
                             }
-                    ]}
+                    ]},
+                    {
+                        "title": "Chapter 4",
+                        "desc": "Chapter 4 Desc",
+                        "lessons": [{
+                                    "title": "Lesson 1",
+                                    "desc": "test"
+                                },
+                                {
+                                    "title": "Lesson 2",
+                                    "desc": "test"
+                                },
+                                {
+                                    "title": "Lesson 3",
+                                    "desc": "test"
+                                },
+                                {
+                                    "title": "Lesson 4",
+                                    "desc": "test"
+                                },
+                                {
+                                    "title": "Lesson 5",
+                                    "desc": "test"
+                                }
+                        ]
+                    }  
             ]
         },
     "book_two":
