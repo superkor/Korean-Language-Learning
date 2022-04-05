@@ -25,4 +25,8 @@ window.onload = function(){
 
     chapterData.send();
 
+    document.getElementById("test").textContent = localStorage.getItem("selectedBook");
+    document.getElementById("test2").textContent = localStorage.getItem("selectedChapter");
+
+
 }

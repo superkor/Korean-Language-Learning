@@ -81,10 +81,9 @@ function createGrid(){
                             newChapter = document.createElement("button");
                             newChapter.appendChild(document.createTextNode("Click here to access the chapter"));
                             newChapter.setAttribute("class", "button");
+                            newChapter.setAttribute("onclick", "chapters("+"'book1','"+data.book_one.chapters[y].title+"')");
                             chapterLink.appendChild(newChapter);
                             //localStorage to get user selected chapter on chapters.html
-                            localStorage.setItem(bookName+data.book_one.chapters[y].title, "book one "+y);
-                            console.log(localStorage.getItem(bookName+data.book_one.chapters[y].title));
                             newCol.appendChild(chapterLink);
                         }
                     }
@@ -102,8 +101,7 @@ function createGrid(){
                             newChapter.setAttribute("class", "button");
                             chapterLink.appendChild(newChapter);
                             //localStorage to get user selected chapter on chapters.html
-                            localStorage.setItem(bookName+data.book_one.chapters[y].title, "book two "+y);
-                            console.log(localStorage.getItem(bookName+data.book_two.chapters[y].title));
+                            newChapter.setAttribute("onclick", "chapters("+"'book2','"+data.book_two.chapters[y].title+"')");
                             newCol.appendChild(chapterLink);
                         }
                     }
@@ -152,4 +150,11 @@ window.onload = function(){
     } else if (load == "back_forward"){
         scrollToTop();
     }
+}
+
+function chapters(selectedBook, selectedChapter){
+    localStorage.setItem("selectedBook", selectedBook);
+    console.log(localStorage.getItem("selectedBook"));
+    localStorage.setItem("selectedChapter", selectedChapter);
+    console.log(localStorage.getItem("selectedChapter"));
 }
