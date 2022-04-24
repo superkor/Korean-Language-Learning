@@ -81,7 +81,7 @@ function createGrid(){
                             newChapter = document.createElement("button");
                             newChapter.appendChild(document.createTextNode("Click here to access the chapter"));
                             newChapter.setAttribute("class", "button");
-                            newChapter.setAttribute("onclick", "chapters("+"'book1','"+data.book_one.chapters[y].title+"')");
+                            newChapter.setAttribute("onclick", "chapters("+"'book1','"+y+"')");
                             chapterLink.appendChild(newChapter);
                             //localStorage to get user selected chapter on chapters.html
                             newCol.appendChild(chapterLink);
@@ -101,7 +101,7 @@ function createGrid(){
                             newChapter.setAttribute("class", "button");
                             chapterLink.appendChild(newChapter);
                             //localStorage to get user selected chapter on chapters.html
-                            newChapter.setAttribute("onclick", "chapters("+"'book2','"+data.book_two.chapters[y].title+"')");
+                            newChapter.setAttribute("onclick", "chapters("+"'book2','"+y+"')");
                             newCol.appendChild(chapterLink);
                         }
                     }

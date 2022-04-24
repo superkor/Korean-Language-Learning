@@ -5,9 +5,11 @@
                 {
                     "title": "Chapter 1",
                     "desc": "Chapter 1 Desc",
-                    "lessons": [{
+                    "lessons": [
+                            {
                                 "title": "Lesson 1",
-                                "desc": "test"
+                                "desc": "test",
+                                "content": ""
                             },
                             {
                                 "title": "Lesson 2",
